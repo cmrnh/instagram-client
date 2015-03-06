@@ -23,7 +23,9 @@ exports.media = function(req, res) {
     instagramRes.on('end', function() {
       var instagramData = JSON.parse(data);
       var url = instagramData.data.images.standard_resolution.url;
-      console.log(url);
+      res.render('instagram', {
+        src: url
+      });
     });
 
   }).on('error', function(e) {
