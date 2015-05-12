@@ -1,2 +1,2 @@
-module.exports.instagram = require('./instagram');
-module.exports.site 	 = require('./site');
+module.exports.images = require('./images');
+module.exports.site = require('./site');
